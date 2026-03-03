@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@theme {
+  /* Synclly Design Tokens */
+  --color-synclly-surface: #F3F7FA;
+  --color-synclly-coral: #FF5C39;
+  --color-synclly-coral-hover: #E64A2E;
+  --color-synclly-deep: #111827;
+  --color-synclly-muted: #64748B;
+
+  /* Accent mapping to Coral for easier migration */
+  --color-accent: var(--color-synclly-coral);
+  --color-accent-hover: var(--color-synclly-coral-hover);
+  --color-accent-light: #FFF5F2;
+
+  /* Typography */
+  --font-jakarta: "Plus Jakarta Sans", "Inter", sans-serif;
+
+  /* Radii */
+  --radius-pill: 12px;
+  --radius-card: 24px;
+  --radius-modal: 32px;
+
+  /* Shadows */
+  --shadow-synclly: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+  --shadow-synclly-lg: 0 25px 50px -12px rgb(0 0 0 / 0.08);
+}
+
+:root {
+  --foreground-rgb: 17, 24, 39;
+  /* Deep Text */
+  --background-rgb: 243, 247, 250;
+  /* Surface */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: var(--font-jakarta);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global Typography Consistency */
+h1 {
+  @apply text-4xl font-extrabold tracking-tight text-synclly-deep leading-tight;
+}
+
+h2 {
+  @apply text-2xl font-bold tracking-tight text-synclly-deep;
+}
+
+h3 {
+  @apply text-lg font-bold tracking-tight text-synclly-deep;
+}
+
+h4 {
+  @apply text-sm font-semibold tracking-wide text-synclly-muted uppercase;
+}
+
+/* Shift Blocks - Synclly Pastel Style */
+.shift-block {
+  @apply flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-bold tracking-tight transition-all border;
+}
+
+.shift-block.morning {
+  @apply bg-[#FFF1E6] text-[#FF9A3E] border-[#FFEDD5];
+}
+
+.shift-block.afternoon {
+  @apply bg-[#E0F2FE] text-[#0EA5E9] border-[#BAE6FD];
+}
+
+.shift-block.night {
+  @apply bg-[#F3E8FF] text-[#A855F7] border-[#E9D5FF];
+}
+
+/* Common Layout Elements */
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-xl border border-white/40 shadow-synclly;
+}
+
+.sidebar-item {
+  @apply flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all;
+}
+
+.sidebar-item-active {
+  @apply bg-white text-synclly-coral shadow-sm border border-slate-100;
+}
+
+/* Standard Buttons */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-2xl font-bold text-sm transition-all active:scale-95;
+}
+
+.btn-primary {
+  @apply bg-synclly-coral text-white hover:bg-synclly-coral-hover shadow-lg shadow-synclly-coral/20;
+}
+
+.btn-secondary {
+  @apply bg-white text-synclly-muted border border-slate-200 hover:bg-slate-50 shadow-sm;
+}

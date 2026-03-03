@@ -1,0 +1,120 @@
+{
+  "timetables": [
+    {
+      "id": "tvfe9aj3s",
+      "name": "test hosp",
+      "weekStart": "2026-03-02T00:00:00.000Z",
+      "weekEnd": "2026-03-08T23:59:59.999Z",
+      "createdAt": "2026-03-03T04:57:33.332Z",
+      "staff": [
+        {
+          "id": "c8hq21tjb",
+          "name": "Garth Cantrell",
+          "department": "ICU",
+          "role": "Radiographer",
+          "timetableId": "tvfe9aj3s"
+        }
+      ],
+      "shiftTypes": [
+        {
+          "id": "dsy909v3w",
+          "name": "Morning",
+          "color": "morning",
+          "startTime": "06:00",
+          "endTime": "14:00"
+        },
+        {
+          "id": "1kg82aae8",
+          "name": "Afternoon",
+          "color": "afternoon",
+          "startTime": "14:00",
+          "endTime": "22:00"
+        },
+        {
+          "id": "0e6tmijnj",
+          "name": "Night",
+          "color": "night",
+          "startTime": "22:00",
+          "endTime": "06:00"
+        }
+      ],
+      "assignments": []
+    },
+    {
+      "id": "korle-bu-01",
+      "name": "Korle Bu Teaching Hospital",
+      "weekStart": "2026-03-02T00:00:00.000Z",
+      "weekEnd": "2026-03-08T23:59:59.000Z",
+      "createdAt": "2026-03-03T04:00:00.000Z",
+      "staff": [
+        {
+          "id": "s1",
+          "name": "Ama Mensah",
+          "department": "Emergency",
+          "role": "Nurse",
+          "timetableId": "korle-bu-01"
+        },
+        {
+          "id": "s2",
+          "name": "Kwame Asante",
+          "department": "Emergency",
+          "role": "Doctor",
+          "timetableId": "korle-bu-01"
+        },
+        {
+          "id": "s3",
+          "name": "Abena Osei",
+          "department": "ICU",
+          "role": "Nurse",
+          "timetableId": "korle-bu-01"
+        },
+        {
+          "id": "s4",
+          "name": "Kofi Adjei",
+          "department": "ICU",
+          "role": "Doctor",
+          "timetableId": "korle-bu-01"
+        }
+      ],
+      "shiftTypes": [
+        {
+          "id": "st1",
+          "name": "Morning",
+          "color": "morning",
+          "startTime": "06:00",
+          "endTime": "14:00"
+        },
+        {
+          "id": "st2",
+          "name": "Afternoon",
+          "color": "afternoon",
+          "startTime": "14:00",
+          "endTime": "22:00"
+        },
+        {
+          "id": "st3",
+          "name": "Night",
+          "color": "night",
+          "startTime": "22:00",
+          "endTime": "06:00"
+        }
+      ],
+      "assignments": [
+        {
+          "id": "3fop3na58",
+          "staffId": "s1",
+          "shiftTypeId": "st1",
+          "date": "2026-03-02T00:00:00.000Z",
+          "timetableId": "korle-bu-01",
+          "shiftType": {
+            "id": "st1",
+            "name": "Morning",
+            "color": "morning",
+            "startTime": "06:00",
+            "endTime": "14:00"
+          }
+        }
+      ]
+    }
+  ]
+}
